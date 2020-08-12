@@ -13,13 +13,21 @@ Los Sistemas de Control de Versiones Distribuidos (DVCS) salvan este problema. A
 <p>
 Al principio, Git se pensó como un motor de bajo nivel sobre el cual otros pudieran escribir la interfaz de usuario o front end como Cogito o StGIT. ​Sin embargo, Git se ha convertido desde entonces en un sistema de control de versiones con funcionalidad plena. Hay algunos proyectos de mucha relevancia que ya usan Git, en particular, el grupo de programación del núcleo Linux.
 </p>
-
 <p>
 Las características básicas de rendimiento de Git son muy sólidas en comparación con muchas otras alternativas. La confirmación de nuevos cambios, la ramificación, la fusión y la comparación de versiones anteriores se han optimizado en favor del rendimiento. Los algoritmos implementados en Git aprovechan el profundo conocimiento sobre los atributos comunes de los auténticos árboles de archivos de código fuente, cómo suelen modificarse con el paso del tiempo y cuáles son los patrones de acceso.
 </p>
 "rama desarrollo pruebas"
 <p>
-
+Son varios los artículos que he ido publicando sobre buenas prácticas con Xojo, pero probablemente uno de los que deberías de aplicar antes de cualquier otro sería el de aplicar un sistema de control de versiones a tu código, especialmente si tus proyectos involucran a varios desarrolladores, pero también igualmente aplicable en el caso de que seas el único desarrollador de tus proyectos. Y actualmente, cuando se habla de control de versiones de código, no cabe duda de que la opción más recomendable es Git.
+</p>
+<p>
+¿Por qué es tan importante? Por muchos motivos, como por ejemplo la capacidad de crear diferentes ramas de un mismo proyecto y poder cambiar de una a otra en función de las necesidades, como es mantener una versión de release y crear una rama diferente para aplicar una nueva característica; o bien para revertir a un estado anterior de un archivo del proyecto tras comprobar que los cambios realizados no proporcionan el comportamiento esperado.
+</p>
+<p>
+Igualmente, podríamos crear una rama temporal en la cual incorporar la solución a un bug reportado por el usuario sin alterar por ello los archivos correspondientes al trabajo de la próxima versión. Todo lo que habrá que hacer será, finalmente, combinar la rama de la nueva característica y la que aporta la solución al bug, y ¡listo!
+</p>
+<p>
+Además, una de las enormes ventajas de Git es que todo ello lo realiza de forma local sobre la carpeta y disco duro empleados para almacenar tus proyectos. Es decir, no requieres de ninguna infraestructura adicional o la necesidad imperiosa de trabajar con un servidor, ya sea este local o bien remoto.
 </p>
 </body>
 </html>
